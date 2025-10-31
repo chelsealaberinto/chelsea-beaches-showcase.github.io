@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Home</title>
     <link rel="icon" type="sea logo/png" href="assets/sea logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -39,8 +39,9 @@
                         <div
                             class="d-flex flex-row mt-2 mt-lg-0 flex-wrap justify-content-center align-items-center gap-3">
                             <a href="#" class="nav-link"><small>Home</small></a>
-                            <a href="#features" class="nav-link"><small>About</small></a>
-                            <a href="#games" class="nav-link"><small>Games</small></a>
+                            <a href="#features" class="nav-link"><small>Collections</small></a>
+                            <a href="#about" class="nav-link"><small>About</small></a>
+
                         </div>
                     </div>
                 </div>
@@ -49,16 +50,51 @@
     </div>
 
     <!-- Video Banner -->
-    <div class="container-fluid p-0 text-center" style="margin-top:-150px; position:relative; z-index:-1;">
-        <video width="100%" height="auto" autoplay loop muted style="display:block;">
+    <div class="container-fluid p-0 text-center" style="margin-top:-150px; position:relative; overflow:hidden;">
+
+        <video width="100%" height="auto" autoplay loop muted style="display:block; filter:brightness(60%);">
             <source src="assets/videobanner.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+
+        <div style="
+         position:absolute;
+         top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  color:white;
+  font-size:2.5rem;
+  font-weight:100;
+  font-family:'Helvetica Neue', 'Raleway', 'Segoe UI', sans-serif;
+  opacity:0;
+  animation:fadeIn 3s ease-in forwards;
+  text-shadow:0 2px 8px rgba(0,0,0,0.6);
+  letter-spacing:2px;">
+
+            Discover Philippines’ Hidden Paradise
+        </div>
+
+        <svg width='0' height='0'>
+            <style>
+                @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                        transform: translate(-50%, -55%);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            </style>
+        </svg>
     </div>
+
 
     <!-- Title Section -->
     <div class="container text-center mt-5">
-        <h1 class="display-4 fw-bold mt-4 poppins">Discover Philippines’ Hidden Paradise</h1>
+        <h1 class="display-4 fw-bold mt-4 poppins">Chelsea's Beach Collection</h1>
         <p class="lead mb-4">
             Let the rhythm of the waves guide you through the Philippines’ pristine beaches —
             a paradise of turquoise seas, white sands, and timeless beauty.
