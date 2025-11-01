@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kalanggaman Island</title>
+    <link rel="icon" type="sea logo/png" href="assets/sea logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Blurred Background -->
+    <div class="position-fixed top-0 vh-100 w-100 glass-clear" style="z-index: -3;">
+    </div>
+
+    <video autoplay muted loop playsinline style="position: fixed; 
+           top: 0; 
+           left: 0; 
+           width: 100%; 
+           height: 100%; 
+           object-fit: cover; 
+           z-index: -2;
+           opacity: 0.7;">
+        <source src="assets/wavebg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Navigation -->
+    <style>
+        .navigation {
+            transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+        }
+
+        .navigation.scrolled {
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(5px);
+        }
+    </style>
+    <div class="container-fluid position-sticky top-0 p-0 p-lg-3 z-1">
+        <div class="container-xl p-0">
+            <div class="navigation glass shadow-sm p-4 px-xl-5 poppins rounded-5 border-bottom">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                    <div class="d-flex flex-row align-items-center">
+                        <a href="../../../">
+                            <img class="me-4" src="assets/sea logo.png" style="width: 50px; height: 50px;">
+                        </a>
+                        <div
+                            class="d-flex flex-row mt-2 mt-lg-0 flex-wrap justify-content-center align-items-center gap-3">
+                            <a href="#" class="nav-link"><small>Home</small></a>
+                            <a href="#features" class="nav-link"><small>About</small></a>
+                            <a href="#gallery" class="nav-link"><small>Gallery</small></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('.navigation');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+<div class="container mt-2 pt-2">
+    <div class="row">
+        <div class="col text-center">
+            <h1 style="font-family: Poppins, sans-serif; font-weight: bold;">Kalanggaman Island</h1>
+            <p style="font-family: Poppins, sans-serif;">Leyte, Philippines</p>
+        </div>
+    </div>
+
+    <div class="card text-bg-dark">
+        <img src="assets/kalanggaman4.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+        </div>
+    </div>
+
+    <div class="div">
+        <div class="row my-5 p-5">
+            <div class="col">
+                <div class="col text-left" id="features" style="scroll-margin-top: 120px;">
+                    <h1 style="font-family: Poppins, sans-serif; font-weight: bold;">About</h1>
+                    <p style="font-family: Poppins, sans-serif; text-align: justify;">
+                        Kalanggaman Island, located off the coast of Palompon in Leyte, Philippines, is a pristine
+                        tropical paradise celebrated for its long, powdery white sandbars that stretch into
+                        crystal-clear turquoise waters. Often regarded as one of the country’s most picturesque islands,
+                        it draws travelers seeking tranquility, adventure, and unspoiled natural beauty.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row align-items-center" style="display:flex; flex-wrap:wrap;">
+
+                <!-- Google Map-->
+                <div class="col-md-6 col-sm-12 mb-4" style="flex:1; padding:10px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125279.56108684784!2d124.1176177625!3d11.114399200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a80e17eed2436d%3A0x9a2dce85b59945dd!2sKalanggaman%20Island!5e0!3m2!1sen!2sph!4v1762006091814!5m2!1sen!2sph"
+                        style="border:0; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.3); width:100%; height:400px;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="col-md-6 col-sm-12"
+                    style="flex:1; padding:20px; display:flex; flex-direction:column; justify-content:center; font-family:Poppins, sans-serif;">
+                    <h3 style="font-weight:bold; margin-bottom:15px;">Location</h3>
+                    <p style="font-size:16px; line-height:1.7; text-align:justify;">
+                        Kalanggaman Island is a small, pristine island in the Visayan Sea, about 10–15 kilometers from
+                        Palompon, Leyte, reachable by a 30–40 minute boat ride. Its remote location offers a peaceful
+                        escape, surrounded by clear turquoise waters and vibrant coral reefs. The island’s famous long
+                        sandbar stretches into the sea, providing a perfect spot for swimming, snorkeling, photography,
+                        and leisurely walks along the shoreline. Its calm waters and scenic surroundings make it a
+                        popular stop for island-hopping adventures in the Visayas.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 ms-auto mt-5" style="text-align: left;">
+                    <div style="border: 2px solid rgba(255, 255, 255, 0.7);
+                  border-radius: 15px;
+                  display: inline-block;
+                  padding: 20px 25px;
+                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+                  background-color: rgba(255, 255, 255, 0.1);
+                  backdrop-filter: blur(5px);">
+                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
+                            Nature and Environment
+                        </div>
+                        <p style="text-align: justify; margin: 0;">
+                            Kalanggaman Island is a small, pristine island in the Visayan Sea, about 10–15 kilometers
+                            from Palompon, Leyte, reachable by a 30–40 minute boat ride. Its remote location offers a
+                            peaceful escape, surrounded by clear turquoise waters and vibrant coral reefs. The island’s
+                            famous long sandbar stretches into the sea, providing a perfect spot for swimming,
+                            snorkeling, photography, and leisurely walks along the shoreline. Its calm waters and scenic
+                            surroundings make it a popular stop for island-hopping adventures in the Visayas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mt-5">
+                    <div style="border: 2px solid rgba(255, 255, 255, 0.7);
+                  border-radius: 15px;
+                  display: inline-block;
+                  padding: 20px 25px;
+                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+                  background-color: rgba(255, 255, 255, 0.1);
+                  backdrop-filter: blur(5px);">
+                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
+                            Ambiance and Experience
+                        </div>
+                        <p style="text-align: justify; margin: 0;">
+                            Visitors to Kalanggaman Island can expect a serene and laid-back atmosphere, perfect for
+                            relaxation or a quiet picnic. The gentle waves and soft sea breeze create a calming
+                            environment, while opportunities for snorkeling, kayaking, and beach camping add a touch of
+                            adventure. Sunset views over the sandbar are particularly breathtaking, making it an ideal
+                            destination for couples, photographers, and nature lovers alike.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 ms-auto mt-5" style="text-align: left;">
+                    <div style="border: 2px solid rgba(255, 255, 255, 0.7);
+                  border-radius: 15px;
+                  display: inline-block;
+                  padding: 20px 25px;
+                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+                  background-color: rgba(255, 255, 255, 0.1);
+                  backdrop-filter: blur(5px);">
+                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
+                            Accommodations and Tourism
+                        </div>
+                        <p style="text-align: justify; margin: 0;">
+                            While the island does not have permanent resorts, local tourism operators provide day trips,
+                            camping facilities, and boat services from Palompon. Visitors are encouraged to bring
+                            essentials such as food, water, and camping gear. Responsible tourism practices, like proper
+                            waste disposal and respect for the environment, are emphasized to ensure Kalanggaman Island
+                            remains a pristine destination for future generations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5 p-5">
+            <div class="row">
+                <div class="col text-center" id="gallery" style="scroll-margin-top: 120px;">
+                    <h1 style="font-family: Poppins, sans-serif; font-weight: bold;">Gallery</h1>
+                </div>
+            </div>
+
+            <div class="container mt-5 mb-5">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="assets/kalanggaman1.jpg" alt="Pagudpud Image 1"
+                            style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="assets/kalanggaman5.jpg" alt="Pagudpud Image 2"
+                            style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="assets/kalanggaman2.jpg" alt="Pagudpud Image 3"
+                            style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="container-fluid glass mt-4 p-5 drop-shadow-sm text-center border-top rounded-top-5  ">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <img src="assets/sea logo.png" alt="Beaches Go Everywhere"
+                                style="height: 50px; width: 50px;">
+                        </div>
+                        <div class="my-4">
+                            <small>
+                                Let's make every day a beach day!
+                            </small>
+                        </div>
+                        <div class="mt-5 text-body-secondary">© 2025 Chelsea's Beach Showcase</div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+            </body>
+
+</html>
