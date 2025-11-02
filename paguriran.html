@@ -5,60 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paguriran Island</title>
-    <link rel="icon" type="sea logo/png" href="assets/sea logo.png">
+    <link rel="icon" type="image/png" href="assets/sea logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
-    <!-- Blurred Background -->
-    <div class="position-fixed top-0 vh-100 w-100 glass-clear" style="z-index: -3;">
-    </div>
+<body style="margin:0; font-family:Poppins, sans-serif;">
 
-    <video autoplay muted loop playsinline style="position: fixed; 
-           top: 0; 
-           left: 0; 
-           width: 100%; 
-           height: 100%; 
-           object-fit: cover; 
-           z-index: -2;
-           opacity: 0.7;">
+    <!-- Background Video -->
+    <div class="position-fixed top-0 vh-100 w-100" style="z-index:-3;"></div>
+    <video autoplay muted loop playsinline
+        style="position:fixed; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-2; opacity:0.7;">
         <source src="assets/wavebg.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
     <!-- Navigation -->
-    <div class="container-fluid position-sticky top-0 p-0 p-lg-3 z-1"
-        style="position: sticky; top: 0; padding: 0; z-index: 1;">
-        <div class="container-xl p-0" style="padding: 0;">
-            <div class="glass shadow-sm p-4 px-xl-5 poppins rounded-5 border-bottom"
-                style="transition: background-color 0.4s ease, backdrop-filter 0.4s ease; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); padding: 1.5rem; padding-left: 3rem; padding-right: 3rem; border-radius: 1.5rem; border-bottom: 1px solid rgba(0,0,0,.1); font-family: 'Poppins', sans-serif;">
-
-                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center"
-                    style="display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
-
-                    <div class="d-flex flex-row align-items-center"
-                        style="display: flex; flex-direction: row; align-items: center;">
-
+    <div class="container-fluid position-sticky top-0 p-0 p-lg-3 z-1">
+        <div class="container-xl p-0">
+            <div class="navigation glass shadow-sm p-4 px-xl-5 rounded-5 border-bottom"
+                style="background-color:rgba(255,255,255,0.95); backdrop-filter:blur(5px); transition:background-color 0.4s ease, backdrop-filter 0.4s ease;">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                    <div class="d-flex flex-row align-items-center">
                         <a href="../../../">
-                            <img src="assets/sea logo.png" style="width: 50px; height: 50px; margin-right: 1.5rem;">
+                            <img src="assets/sea logo.png" style="width:50px; height:50px;" class="me-4">
                         </a>
-
-                        <div class="d-flex flex-row mt-2 mt-lg-0 flex-wrap justify-content-center align-items-center gap-3"
-                            style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem; margin-top: 0.5rem;">
-
-                            <a href="index.html" class="nav-link"
-                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
-                                <small>Home</small>
-                            </a>
-                            <a href="#features" class="nav-link"
-                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
-                                <small>About</small>
-                            </a>
-                            <a href="#gallery" class="nav-link"
-                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
-                                <small>Gallery</small>
-                            </a>
+                        <div
+                            class="d-flex flex-row mt-2 mt-lg-0 flex-wrap justify-content-center align-items-center gap-3">
+                            <a href="index.html" class="nav-link"><small>Home</small></a>
+                            <a href="#features" class="nav-link"><small>About</small></a>
+                            <a href="#gallery" class="nav-link"><small>Gallery</small></a>
                         </div>
                     </div>
                 </div>
@@ -66,202 +42,169 @@
         </div>
     </div>
 
+    <!-- Title Section -->
+    <div class="container mt-2 pt-2 text-center">
+        <h1 style="font-weight:bold;">Paguriran Island</h1>
+        <p>Sorsogon, Philippines</p>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="container my-4">
+        <div class="card border-0">
+            <img src="assets/paguriran8.png" alt="Paguriran Island" class="card-img rounded-4 shadow"
+                style="width:100%; height:auto;">
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="container my-5" id="features" style="scroll-margin-top:120px;">
+        <h1 style="font-weight:bold;">About</h1>
+        <p style="text-align:justify;">
+            Paguriran Island in Bacon District, Sorsogon, is a hidden tropical gem known for its
+            crystal-clear turquoise lagoon encircled by dramatic limestone formations. Though called an
+            island, it’s actually a rock formation connected to the mainland by a shallow sandbar, making it
+            accessible by foot during low tide. The island’s natural lagoon, sometimes compared to a mini
+            version of Palawan’s lagoons, offers a serene and photogenic setting perfect for swimming,
+            snorkeling, and relaxing in nature.
+
+        </p>
+    </div>
+
+    <!-- Location -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.45000074377!2d124.11932947359088!3d13.070642212702136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a0f36d22d51a51%3A0x40c9dbd869f352d3!2sPaguriran%20Island%20and%20Lagoon!5e0!3m2!1sen!2sph!4v1761925377172!5m2!1sen!2sph"
+                    style="border:0; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.3); width:100%; height:400px;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6">
+                <h3 style="font-weight:bold; margin-bottom:15px;">Location</h3>
+                <p style="font-size:16px; line-height:1.7; text-align:justify;">
+                    Found in Barangay Sawanga, Bacon, Sorsogon, Paguriran Island lies about 15 kilometers from
+                    Sorsogon City. The area features a picturesque blend of white sand, coral rocks, and calm
+                    blue-green waters that contrast beautifully with the rugged cliffs surrounding the lagoon. The
+                    shallow shoreline makes it family-friendly and ideal for wading or snorkeling. The island faces
+                    the vast Sorsogon Bay, providing a panoramic view of the horizon and nearby coastal villages.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nature and Environment -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 ms-auto">
+                <div
+                    style="border:2px solid rgba(255,255,255,0.7); border-radius:15px; padding:20px 25px; box-shadow:0 4px 15px rgba(0,0,0,0.15); background-color:rgba(255,255,255,0.1); backdrop-filter:blur(5px);">
+                    <div style="font-size:2rem; font-weight:700; margin-bottom:10px;">Nature and Environment</div>
+                    <p style="text-align:justify; margin:0;">
+                        The lagoon’s clear waters are home to small marine species, coral formations, and sea
+                        grasses, reflecting the area’s ecological richness. The surrounding vegetation provides
+                        shade and enhances the natural beauty of the landscape. Local communities actively maintain
+                        the area’s cleanliness, promoting eco-friendly tourism and sustainable visitor practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ambiance -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div
+                    style="border:2px solid rgba(255,255,255,0.7); border-radius:15px; padding:20px 25px; box-shadow:0 4px 15px rgba(0,0,0,0.15); background-color:rgba(255,255,255,0.1); backdrop-filter:blur(5px);">
+                    <div style="font-size:2rem; font-weight:700; margin-bottom:10px;">Ambiance and Experience</div>
+                    <p style="text-align:justify; margin:0;">
+                        Paguriran has a calm, rustic charm that feels worlds away from the busy crowds of popular
+                        tourist spots. Friendly locals welcome visitors, who can spend the day swimming, cliff diving,
+                        or wandering around the rock pools when the tide is low. Its peaceful atmosphere makes it a
+                        perfect hideaway for nature lovers and photographers looking for a quiet escape.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accommodations -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 ms-auto">
+                <div
+                    style="border:2px solid rgba(255,255,255,0.7); border-radius:15px; padding:20px 25px; box-shadow:0 4px 15px rgba(0,0,0,0.15); background-color:rgba(255,255,255,0.1); backdrop-filter:blur(5px);">
+                    <div style="font-size:2rem; font-weight:700; margin-bottom:10px;">Accommodations and Tourism</div>
+                    <p style="text-align:justify; margin:0;">
+                        While Paguriran Island itself has no hotels or large resorts, several beachfront cottages,
+                        nipa huts, and homestays in nearby Bacon and Sorsogon City offer comfortable lodging for
+                        visitors. Tourists can rent huts for day use or stay overnight in budget-friendly
+                        accommodations with ocean views. The local tourism office and community manage visitor
+                        activities, offering guided tours, boat rides, and fresh seafood dining experiences.
+
+                        Paguriran Island stands as one of Sorsogon’s most underrated yet enchanting destinations — a
+                        perfect spot for travelers seeking simplicity, natural beauty, and an authentic local
+                        experience.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container my-5 p-5" id="gallery" style="scroll-margin-top:120px;">
+        <div class="text-center mb-4">
+            <h1 style="font-weight:bold;">Gallery</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/paguriran2.jpg" alt="Paguriran 2"
+                    style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/pagudpud4.jpg" alt="Paguriran 4"
+                    style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/paguriran5.jpg" alt="Paguriran 5"
+                    style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid mt-4 p-5 text-center border-top rounded-top-5"
+        style="background-color:rgba(255,255,255,0.3); backdrop-filter:blur(10px);">
+        <img src="assets/sea logo.png" alt="Logo" style="height:50px; width:50px;" class="mb-3">
+        <div class="my-3">
+            <small>Let's make every day a beach day!</small>
+        </div>
+        <div class="mt-4 text-body-secondary">© 2025 Chelsea's Beach Showcase</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
     <script>
         window.addEventListener('scroll', function () {
             const nav = document.querySelector('.navigation');
             if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
+                nav.style.backgroundColor = 'rgba(255,255,255,0.6)';
+                nav.style.backdropFilter = 'blur(5px)';
             } else {
-                nav.classList.remove('scrolled');
+                nav.style.backgroundColor = 'rgba(255,255,255,0.95)';
+                nav.style.backdropFilter = 'blur(5px)';
             }
         });
     </script>
 </body>
-
-<div class="container mt-2 pt-2">
-    <div class="row">
-        <div class="col text-center">
-            <h1 style="font-family: Poppins, sans-serif; font-weight: bold;">Paguriran Island</h1>
-            <p style="font-family: Poppins, sans-serif;">Sorsogon, Philippines</p>
-        </div>
-    </div>
-
-    <div class="card text-bg-dark">
-        <img src="assets/paguriran8.png" class="card-img" alt="...">
-        <div class="card-img-overlay">
-        </div>
-    </div>
-
-    <div class="div">
-        <div class="row my-5 p-5">
-            <div class="col">
-                <div class="col text-left" id="features" style="scroll-margin-top: 120px;">
-                    <h1 style="font-family: Poppins, sans-serif; font-weight: bold;">About</h1>
-                    <p style="font-family: Poppins, sans-serif; text-align: justify;">
-                        Paguriran Island in Bacon District, Sorsogon, is a hidden tropical gem known for its
-                        crystal-clear turquoise lagoon encircled by dramatic limestone formations. Though called an
-                        island, it’s actually a rock formation connected to the mainland by a shallow sandbar, making it
-                        accessible by foot during low tide. The island’s natural lagoon, sometimes compared to a mini
-                        version of Palawan’s lagoons, offers a serene and photogenic setting perfect for swimming,
-                        snorkeling, and relaxing in nature.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container my-5">
-            <div class="row align-items-center" style="display:flex; flex-wrap:wrap;">
-
-                <!-- Google Map-->
-                <div class="col-md-6 col-sm-12 mb-4" style="flex:1; padding:10px;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.45000074377!2d124.11932947359088!3d13.070642212702136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a0f36d22d51a51%3A0x40c9dbd869f352d3!2sPaguriran%20Island%20and%20Lagoon!5e0!3m2!1sen!2sph!4v1761925377172!5m2!1sen!2sph"
-                        style="border:0; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.3); width:100%; height:400px;"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-
-                <div class="col-md-6 col-sm-12"
-                    style="flex:1; padding:20px; display:flex; flex-direction:column; justify-content:center; font-family:Poppins, sans-serif;">
-                    <h3 style="font-weight:bold; margin-bottom:15px;">Location</h3>
-                    <p style="font-size:16px; line-height:1.7; text-align:justify;">
-                        Situated in Barangay Sawanga, Bacon, Sorsogon, Paguriran Island lies about 15 kilometers from
-                        Sorsogon City. The area features a picturesque blend of white sand, coral rocks, and calm
-                        blue-green waters that contrast beautifully with the rugged cliffs surrounding the lagoon. The
-                        shallow shoreline makes it family-friendly and ideal for wading or snorkeling. The island faces
-                        the vast Sorsogon Bay, providing a panoramic view of the horizon and nearby coastal villages.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 ms-auto mt-5" style="text-align: left;">
-                    <div style="border: 2px solid rgba(255, 255, 255, 0.7);
-                  border-radius: 15px;
-                  display: inline-block;
-                  padding: 20px 25px;
-                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-                  background-color: rgba(255, 255, 255, 0.1);
-                  backdrop-filter: blur(5px);">
-                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
-                            Nature and Environment
-                        </div>
-                        <p style="text-align: justify; margin: 0;">
-                            The lagoon’s clear waters are home to small marine species, coral formations, and sea
-                            grasses, reflecting the area’s ecological richness. The surrounding vegetation provides
-                            shade and enhances the natural beauty of the landscape. Local communities actively maintain
-                            the area’s cleanliness, promoting eco-friendly tourism and sustainable visitor practices.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 mt-5">
-                    <div style="border: 2px solid rgba(255, 255, 255, 0.7);
-                  border-radius: 15px;
-                  display: inline-block;
-                  padding: 20px 25px;
-                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-                  background-color: rgba(255, 255, 255, 0.1);
-                  backdrop-filter: blur(5px);">
-                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
-                            Ambiance and Experience
-                        </div>
-                        <p style="text-align: justify; margin: 0;">
-                            Paguriran offers a peaceful, rustic charm — far from the commercial bustle of major tourist
-                            destinations. Visitors are greeted by friendly locals and can enjoy a relaxing day of
-                            swimming, cliff diving, or exploring the natural rock pools during low tide. The tranquility
-                            of the area makes it an ideal escape for nature lovers and photographers seeking a quiet
-                            retreat.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 ms-auto mt-5" style="text-align: left;">
-                    <div style="border: 2px solid rgba(255, 255, 255, 0.7);
-                  border-radius: 15px;
-                  display: inline-block;
-                  padding: 20px 25px;
-                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-                  background-color: rgba(255, 255, 255, 0.1);
-                  backdrop-filter: blur(5px);">
-                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
-                            Accommodations and Tourism
-                        </div>
-                        <p style="text-align: justify; margin: 0;">
-                            While Paguriran Island itself has no hotels or large resorts, several beachfront cottages,
-                            nipa huts, and homestays in nearby Bacon and Sorsogon City offer comfortable lodging for
-                            visitors. Tourists can rent huts for day use or stay overnight in budget-friendly
-                            accommodations with ocean views. The local tourism office and community manage visitor
-                            activities, offering guided tours, boat rides, and fresh seafood dining experiences.
-
-                            Paguriran Island stands as one of Sorsogon’s most underrated yet enchanting destinations — a
-                            perfect spot for travelers seeking simplicity, natural beauty, and an authentic local
-                            experience.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container my-5 p-5">
-            <div class="row">
-                <div class="col text-center" id="gallery" style="scroll-margin-top: 120px;">
-                    <h1 style="font-family: Poppins, sans-serif; font-weight: bold;">Gallery</h1>
-                </div>
-            </div>
-
-            <div class="container mt-5 mb-5">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="assets/paguriran2.jpg" alt="Pagudpud Image 1"
-                            style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="assets/paguriran4.jpg" alt="Pagudpud Image 2"
-                            style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="assets/paguriran5.jpg" alt="Pagudpud Image 3"
-                            style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="container-fluid glass mt-4 p-5 drop-shadow-sm text-center border-top rounded-top-5  ">
-                <div class="row">
-                    <div class="col">
-                        <div class="mb-3">
-                            <img src="assets/sea logo.png" alt="Beaches Go Everywhere"
-                                style="height: 50px; width: 50px;">
-                        </div>
-                        <div class="my-4">
-                            <small>
-                                Let's make every day a beach day!
-                            </small>
-                        </div>
-                        <div class="mt-5 text-body-secondary">© 2025 Chelsea's Beach Showcase</div>
-                    </div>
-                </div>
-            </div>
-
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                crossorigin="anonymous"></script>
-            </body>
 
 </html>

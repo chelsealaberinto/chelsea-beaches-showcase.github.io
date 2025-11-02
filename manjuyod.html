@@ -5,60 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Manjuyod White Sandbar</title>
-    <link rel="icon" type="sea logo/png" href="assets/sea logo.png">
+    <link rel="icon" type="image/png" href="assets/sea logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
-    <!-- Blurred Background -->
-    <div class="position-fixed top-0 vh-100 w-100 glass-clear" style="z-index: -3;">
-    </div>
+<body style="margin:0; font-family:Poppins, sans-serif;">
 
-    <video autoplay muted loop playsinline style="position: fixed; 
-           top: 0; 
-           left: 0; 
-           width: 100%; 
-           height: 100%; 
-           object-fit: cover; 
-           z-index: -2;
-           opacity: 0.7;">
+    <!-- Background Video -->
+    <div class="position-fixed top-0 vh-100 w-100" style="z-index:-3;"></div>
+    <video autoplay muted loop playsinline
+        style="position:fixed; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-2; opacity:0.7;">
         <source src="assets/wavebg.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
     <!-- Navigation -->
-    <div class="container-fluid position-sticky top-0 p-0 p-lg-3 z-1"
-        style="position: sticky; top: 0; padding: 0; z-index: 1;">
-        <div class="container-xl p-0" style="padding: 0;">
-            <div class="glass shadow-sm p-4 px-xl-5 poppins rounded-5 border-bottom"
-                style="transition: background-color 0.4s ease, backdrop-filter 0.4s ease; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); padding: 1.5rem; padding-left: 3rem; padding-right: 3rem; border-radius: 1.5rem; border-bottom: 1px solid rgba(0,0,0,.1); font-family: 'Poppins', sans-serif;">
-
-                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center"
-                    style="display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
-
-                    <div class="d-flex flex-row align-items-center"
-                        style="display: flex; flex-direction: row; align-items: center;">
-
+    <div class="container-fluid position-sticky top-0 p-0 p-lg-3 z-1">
+        <div class="container-xl p-0">
+            <div class="navigation glass shadow-sm p-4 px-xl-5 rounded-5 border-bottom"
+                style="background-color:rgba(255,255,255,0.95); backdrop-filter:blur(5px); transition:background-color 0.4s ease, backdrop-filter 0.4s ease;">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                    <div class="d-flex flex-row align-items-center">
                         <a href="../../../">
-                            <img src="assets/sea logo.png" style="width: 50px; height: 50px; margin-right: 1.5rem;">
+                            <img src="assets/sea logo.png" style="width:50px; height:50px;" class="me-4">
                         </a>
-
-                        <div class="d-flex flex-row mt-2 mt-lg-0 flex-wrap justify-content-center align-items-center gap-3"
-                            style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem; margin-top: 0.5rem;">
-
-                            <a href="index.html" class="nav-link"
-                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
-                                <small>Home</small>
-                            </a>
-                            <a href="#features" class="nav-link"
-                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
-                                <small>About</small>
-                            </a>
-                            <a href="#gallery" class="nav-link"
-                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
-                                <small>Gallery</small>
-                            </a>
+                        <div
+                            class="d-flex flex-row mt-2 mt-lg-0 flex-wrap justify-content-center align-items-center gap-3">
+                            <a href="index.html" class="nav-link"><small>Home</small></a>
+                            <a href="#features" class="nav-link"><small>About</small></a>
+                            <a href="#gallery" class="nav-link"><small>Gallery</small></a>
                         </div>
                     </div>
                 </div>
@@ -66,203 +42,173 @@
         </div>
     </div>
 
+    <!-- Title Section -->
+    <div class="container mt-2 pt-2 text-center">
+        <h1 style="font-weight:bold;">Manjuyod White Sandbar</h1>
+        <p>Negros Oriental, Philippines</p>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="container my-4">
+        <div class="card border-0">
+            <img src="assets/manjuyod7.jpg" alt="Manjuyod White Sandbar" class="card-img rounded-4 shadow"
+                style="width:100%; height:auto;">
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="container my-5" id="features" style="scroll-margin-top:120px;">
+        <h1 style="font-weight:bold;">About</h1>
+        <p style="text-align:justify;">
+            Manjuyod White Sandbar in Negros Oriental, Philippines, is often called the “Maldives of the
+            Philippines” for its stunning stretch of white sand that appears during low tide. This natural
+            sandbar, surrounded by crystal-clear turquoise waters, offers a serene escape perfect for
+            swimming, snorkeling, and dolphin watching. Its pristine beauty and simplicity make it one of
+            the top eco-tourism spots in Central Visayas.
+
+        </p>
+    </div>
+
+    <!-- Location -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.6722768763098!2d123.16036987353581!3d9.623460379403639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ab8729539ee6e7%3A0xb04ee4041cf57011!2sManjuyod%20White%20Sandbar!5e0!3m2!1sen!2sph!4v1761927167033!5m2!1sen!2sph"
+                    style="border:0; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.3); width:100%; height:400px;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6">
+                <h3 style="font-weight:bold; margin-bottom:15px;">Location</h3>
+                <p style="font-size:16px; line-height:1.7; text-align:justify;">
+                    Located off the coast of Bais City in Negros Oriental, Manjuyod White Sandbar stretches
+                    approximately 7 kilometers across the Tanon Strait, the narrow body of water separating Negros
+                    Island from Cebu. It is easily accessible via a 15-minute boat ride from the Bais City wharf.
+                    When the tide is low, the sandbar emerges from the sea, creating a stunning expanse of white
+                    sand surrounded by shimmering blue waters. The backdrop of the distant mountains and the horizon
+                    makes it a truly postcard-perfect destination.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nature and Environment -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 ms-auto">
+                <div
+                    style="border:2px solid rgba(255,255,255,0.7); border-radius:15px; padding:20px 25px; box-shadow:0 4px 15px rgba(0,0,0,0.15); background-color:rgba(255,255,255,0.1); backdrop-filter:blur(5px);">
+                    <div style="font-size:2rem; font-weight:700; margin-bottom:10px;">Nature and Environment</div>
+                    <p style="text-align:justify; margin:0;">
+                        The sandbar is surrounded by rich marine life, including colorful fish, seagrass beds, and
+                        corals. The nearby Tanon Strait is a protected area known for its population of dolphins and
+                        whales. Local authorities and communities work together to maintain its cleanliness and
+                        promote responsible tourism so that visitors can continue to enjoy its natural charm for
+                        years to come.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ambiance -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div
+                    style="border:2px solid rgba(255,255,255,0.7); border-radius:15px; padding:20px 25px; box-shadow:0 4px 15px rgba(0,0,0,0.15); background-color:rgba(255,255,255,0.1); backdrop-filter:blur(5px);">
+                    <div style="font-size:2rem; font-weight:700; margin-bottom:10px;">Ambiance and Experience</div>
+                    <p style="text-align:justify; margin:0;">
+                        Manjuyod is the kind of place where you can slow down and just enjoy the moment. You can
+                        take a walk along the sandbar, swim in calm waters, or rent one of the floating cottages for
+                        a relaxing day by the sea. Many visitors also take early morning boat tours to watch
+                        dolphins play in the Tanon Strait — one of the most memorable experiences in Negros
+                        Oriental. The calm, open setting and gentle sea breeze make it a perfect spot to unwind and
+                        connect with nature.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accommodations -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 ms-auto">
+                <div
+                    style="border:2px solid rgba(255,255,255,0.7); border-radius:15px; padding:20px 25px; box-shadow:0 4px 15px rgba(0,0,0,0.15); background-color:rgba(255,255,255,0.1); backdrop-filter:blur(5px);">
+                    <div style="font-size:2rem; font-weight:700; margin-bottom:10px;">Accommodations and Tourism</div>
+                    <p style="text-align:justify; margin:0;">
+                        While there are no hotels on the sandbar itself, nearby Bais City and Dumaguete offer
+                        comfortable accommodations — from simple guesthouses to beach resorts. Boat operators in
+                        Bais organize day tours that include dolphin watching, seafood lunches, and island-hopping.
+                        The experience is simple but authentic, reflecting the warmth and hospitality of the locals.
+
+                        In short, Manjuyod White Sandbar is a peaceful paradise — a place where the sea, sky, and
+                        sand come together beautifully, offering a glimpse of the Philippines’ natural wonders at
+                        their best.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container my-5 p-5" id="gallery" style="scroll-margin-top:120px;">
+        <div class="text-center mb-4">
+            <h1 style="font-weight:bold;">Gallery</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/manjuyod4.jpg" alt="Manjuyod 4"
+                    style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/manjuyod5.jpg" alt="manjuyod5"
+                    style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/manjuyod6.jpg" alt="Manjuyod 6"
+                    style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid mt-4 p-5 text-center border-top rounded-top-5"
+        style="background-color:rgba(255,255,255,0.3); backdrop-filter:blur(10px);">
+        <img src="assets/sea logo.png" alt="Logo" style="height:50px; width:50px;" class="mb-3">
+        <div class="my-3">
+            <small>Let's make every day a beach day!</small>
+        </div>
+        <div class="mt-4 text-body-secondary">© 2025 Chelsea's Beach Showcase</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
     <script>
         window.addEventListener('scroll', function () {
             const nav = document.querySelector('.navigation');
             if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
+                nav.style.backgroundColor = 'rgba(255,255,255,0.6)';
+                nav.style.backdropFilter = 'blur(5px)';
             } else {
-                nav.classList.remove('scrolled');
+                nav.style.backgroundColor = 'rgba(255,255,255,0.95)';
+                nav.style.backdropFilter = 'blur(5px)';
             }
         });
     </script>
 </body>
-
-<div class="container mt-2 pt-2">
-    <div class="row">
-        <div class="col text-center">
-            <h1 style="font-family: Poppins, sans-serif; font-weight: bold;">Manjuyod White Sandbar</h1>
-            <p style="font-family: Poppins, sans-serif;">Negros Oriental, Philippines</p>
-        </div>
-    </div>
-
-    <div class="card text-bg-dark">
-        <img src="assets/manjuyod7.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay">
-        </div>
-    </div>
-
-    <div class="div">
-        <div class="row my-5 p-5">
-            <div class="col">
-                <div class="col text-left" id="features" style="scroll-margin-top: 120px;">
-                    <h1 style="font-family: Poppins, sans-serif; font-weight: bold;">About</h1>
-                    <p style="font-family: Poppins, sans-serif; text-align: justify;">
-                        Manjuyod White Sandbar in Negros Oriental, Philippines, is often called the “Maldives of the
-                        Philippines” for its stunning stretch of white sand that appears during low tide. This natural
-                        sandbar, surrounded by crystal-clear turquoise waters, offers a serene escape perfect for
-                        swimming, snorkeling, and dolphin watching. Its pristine beauty and simplicity make it one of
-                        the top eco-tourism spots in Central Visayas.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container my-5">
-            <div class="row align-items-center" style="display:flex; flex-wrap:wrap;">
-
-                <!-- Google Map-->
-                <div class="col-md-6 col-sm-12 mb-4" style="flex:1; padding:10px;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.6722768763098!2d123.16036987353581!3d9.623460379403639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ab8729539ee6e7%3A0xb04ee4041cf57011!2sManjuyod%20White%20Sandbar!5e0!3m2!1sen!2sph!4v1761927167033!5m2!1sen!2sph"
-                        style="border:0; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.3); width:100%; height:400px;"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-
-                <div class="col-md-6 col-sm-12"
-                    style="flex:1; padding:20px; display:flex; flex-direction:column; justify-content:center; font-family:Poppins, sans-serif;">
-                    <h3 style="font-weight:bold; margin-bottom:15px;">Location</h3>
-                    <p style="font-size:16px; line-height:1.7; text-align:justify;">
-                        Situated off the coast of Bais City in Negros Oriental, Manjuyod White Sandbar stretches
-                        approximately 7 kilometers across the Tanon Strait, the narrow body of water separating Negros
-                        Island from Cebu. It is easily accessible via a 15-minute boat ride from the Bais City wharf.
-                        When the tide is low, the sandbar emerges from the sea, creating a stunning expanse of white
-                        sand surrounded by shimmering blue waters. The backdrop of the distant mountains and the horizon
-                        makes it a truly postcard-perfect destination.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 ms-auto mt-5" style="text-align: left;">
-                    <div style="border: 2px solid rgba(255, 255, 255, 0.7);
-                  border-radius: 15px;
-                  display: inline-block;
-                  padding: 20px 25px;
-                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-                  background-color: rgba(255, 255, 255, 0.1);
-                  backdrop-filter: blur(5px);">
-                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
-                            Nature and Environment
-                        </div>
-                        <p style="text-align: justify; margin: 0;">
-                            The sandbar is surrounded by rich marine life, including colorful fish, seagrass beds, and
-                            corals. The nearby Tanon Strait is a protected area known for its population of dolphins and
-                            whales. Local authorities and communities work together to maintain its cleanliness and
-                            promote responsible tourism so that visitors can continue to enjoy its natural charm for
-                            years to come.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 mt-5">
-                    <div style="border: 2px solid rgba(255, 255, 255, 0.7);
-                  border-radius: 15px;
-                  display: inline-block;
-                  padding: 20px 25px;
-                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-                  background-color: rgba(255, 255, 255, 0.1);
-                  backdrop-filter: blur(5px);">
-                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
-                            Ambiance and Experience
-                        </div>
-                        <p style="text-align: justify; margin: 0;">
-                            Manjuyod is the kind of place where you can slow down and just enjoy the moment. You can
-                            take a walk along the sandbar, swim in calm waters, or rent one of the floating cottages for
-                            a relaxing day by the sea. Many visitors also take early morning boat tours to watch
-                            dolphins play in the Tanon Strait — one of the most memorable experiences in Negros
-                            Oriental. The calm, open setting and gentle sea breeze make it a perfect spot to unwind and
-                            connect with nature.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 ms-auto mt-5" style="text-align: left;">
-                    <div style="border: 2px solid rgba(255, 255, 255, 0.7);
-                  border-radius: 15px;
-                  display: inline-block;
-                  padding: 20px 25px;
-                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-                  background-color: rgba(255, 255, 255, 0.1);
-                  backdrop-filter: blur(5px);">
-                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
-                            Accommodations and Tourism
-                        </div>
-                        <p style="text-align: justify; margin: 0;">
-                            While there are no hotels on the sandbar itself, nearby Bais City and Dumaguete offer
-                            comfortable accommodations — from simple guesthouses to beach resorts. Boat operators in
-                            Bais organize day tours that include dolphin watching, seafood lunches, and island-hopping.
-                            The experience is simple but authentic, reflecting the warmth and hospitality of the locals.
-
-                            In short, Manjuyod White Sandbar is a peaceful paradise — a place where the sea, sky, and
-                            sand come together beautifully, offering a glimpse of the Philippines’ natural wonders at
-                            their best.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container my-5 p-5">
-            <div class="row">
-                <div class="col text-center" id="gallery" style="scroll-margin-top: 120px;">
-                    <h1 style="font-family: Poppins, sans-serif; font-weight: bold;">Gallery</h1>
-                </div>
-            </div>
-
-            <div class="container mt-5 mb-5">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="assets/manjuyod4.jpg" alt="Pagudpud Image 1"
-                            style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="assets/manjuyod5.jpg" alt="Pagudpud Image 2"
-                            style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="assets/manjuyod6.jpg" alt="Pagudpud Image 3"
-                            style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="container-fluid glass mt-4 p-5 drop-shadow-sm text-center border-top rounded-top-5  ">
-                <div class="row">
-                    <div class="col">
-                        <div class="mb-3">
-                            <img src="assets/sea logo.png" alt="Beaches Go Everywhere"
-                                style="height: 50px; width: 50px;">
-                        </div>
-                        <div class="my-4">
-                            <small>
-                                Let's make every day a beach day!
-                            </small>
-                        </div>
-                        <div class="mt-5 text-body-secondary">© 2025 Chelsea's Beach Showcase</div>
-                    </div>
-                </div>
-            </div>
-
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                crossorigin="anonymous"></script>
-            </body>
 
 </html>

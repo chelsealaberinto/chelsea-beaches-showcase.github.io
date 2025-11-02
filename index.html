@@ -15,34 +15,31 @@
     <div class="position-fixed top-0 vh-100 w-100 glass-clear" style="z-index: -3;"></div>
 
     <!-- Navigation Bar -->
-    <div class="container-fluid position-sticky top-0 p-0 p-lg-3 z-1"
-        style="position: sticky; top: 0; padding: 0; padding-left: var(--bs-gutter-x,1.5rem); padding-right: var(--bs-gutter-x,1.5rem); z-index: 1;">
-        <div class="container-xl p-0" style="padding: 0;">
-            <div class="navigation glass shadow-sm p-4 px-xl-5 poppins rounded-5 border-bottom"
-                style="transition: background-color 0.4s ease, backdrop-filter 0.4s ease; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); padding: 1.5rem; padding-left: 3rem; padding-right: 3rem; border-radius: 1.5rem; border-bottom: 1px solid rgba(0,0,0,.1); font-family: 'Poppins', sans-serif;">
+    <style>
+        .navigation {
+            transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+        }
 
-                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center"
-                    style="display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+        .navigation.scrolled {
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(5px);
+        }
+    </style>
 
-                    <div class="d-flex flex-row align-items-center"
-                        style="display: flex; flex-direction: row; align-items: center;">
-
+    <div class="container-fluid position-sticky top-0 p-0 p-lg-3 z-1">
+        <div class="container-xl p-0">
+            <div class="navigation glass shadow-sm p-4 px-xl-5 poppins rounded-5 border-bottom">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                    <div class="d-flex flex-row align-items-center">
                         <a href="../../../">
-                            <img class="me-4" src="assets/sea logo.png"
-                                style="width: 50px; height: 50px; margin-right: 1.5rem;">
+                            <img class="me-4" src="assets/sea logo.png" style="width: 50px; height: 50px;">
                         </a>
-
-                        <div class="d-flex flex-row mt-2 mt-lg-0 flex-wrap justify-content-center align-items-center gap-3"
-                            style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem; margin-top: 0.5rem;">
-
-                            <a href="#" class="nav-link"
-                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
-                                <small>Home</small>
-                            </a>
-                            <a href="#collection" class="nav-link"
-                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
-                                <small>Collections</small>
-                            </a>
+                        <div
+                            class="d-flex flex-row mt-2 mt-lg-0 flex-wrap justify-content-center align-items-center gap-3">
+                            <a href="#" class="nav-link"><small>Home</small></a>
+                            <a href="#collection" class="nav-link"><small>Collections</small></a>
                         </div>
                     </div>
                 </div>
@@ -50,33 +47,33 @@
         </div>
     </div>
 
-
-    <!-- Video Banner -->
-    <div class="container-fluid p-0 text-center" style="margin-top:-150px; position:relative; overflow:hidden;">
-
-        <video width="100%" height="auto" autoplay loop muted style="display:block; filter:brightness(60%);">
+    <!-- Video Banner (Fixed for Mobile Responsiveness) -->
+    <div class="container-fluid p-0 text-center position-relative" style="margin-top:-134px; overflow:hidden;">
+        <video autoplay loop muted playsinline
+            style="width:100%; height:auto; max-height:85vh; object-fit:cover; display:block; filter:brightness(60%);">
             <source src="assets/videobanner.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
         <div style="
-         position:absolute;
-         top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  color:white;
-  font-size:2.5rem;
-  font-weight:100;
-  font-family:'Helvetica Neue', 'Raleway', 'Segoe UI', sans-serif;
-  opacity:0;
-  animation:fadeIn 3s ease-in forwards;
-  text-shadow:0 2px 8px rgba(0,0,0,0.6);
-  letter-spacing:2px;">
-
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+            color:white;
+            font-size:clamp(1.2rem, 4vw, 2.5rem);
+            font-weight:100;
+            font-family:'Helvetica Neue','Raleway','Segoe UI',sans-serif;
+            text-shadow:0 2px 8px rgba(0,0,0,0.6);
+            letter-spacing:2px;
+            text-align:center;
+            padding:0 10px;
+            opacity:0;
+            animation:fadeIn 3s ease-in forwards;">
             Discover Philippines’ Hidden Paradise
         </div>
 
-        <svg width='0' height='0'>
+        <svg width="0" height="0">
             <style>
                 @keyframes fadeIn {
                     0% {
@@ -89,10 +86,23 @@
                         transform: translate(-50%, -50%);
                     }
                 }
+
+                @media (max-width: 768px) {
+                    video {
+                        height: 60vh !important;
+                        object-position: center;
+                    }
+                }
+
+                @media (max-width: 576px) {
+                    video {
+                        height: 50vh !important;
+                        object-position: center;
+                    }
+                }
             </style>
         </svg>
     </div>
-
 
     <!-- Title Section -->
     <div class="container text-center mt-5" id="collection" style="scroll-margin-top: 120px;">
@@ -155,7 +165,7 @@
                         <div class="card-body text-center"
                             style="height:120px; display:flex; flex-direction:column; justify-content:center; align-items:center; font-family:Poppins, sans-serif;">
                             <p style="font-weight:bold; margin-bottom:5px;">Paguriran Island</p>
-                            <p style="margin:0;">Sorsogon</p>
+                            <p style="margin:0;">Bataan</p>
                         </div>
                     </div>
                 </a>
@@ -279,29 +289,17 @@
                 <div class="mb-3">
                     <img src="assets/sea logo.png" alt="Beaches Go Everywhere" style="height: 50px; width: 50px;">
                 </div>
-                <div class="my-4">
-                    <small>Let's make every day a beach day!</small>
+                <div class="my-2 text-secondary">
+                    Beaches Go Everywhere &copy; 2025
                 </div>
-                <div class="mt-5 text-body-secondary">© 2025 Chelsea's Beach Showcase</div>
             </div>
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script>
-        window.addEventListener('scroll', function () {
-            const nav = document.querySelector('.navigation');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        integrity="sha384-lPYjP3Qd2KUfHsVykBLL8GMDIS9ZhDJW60F7uP3cu6U02zszbmWzxubUANe0yoyB"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

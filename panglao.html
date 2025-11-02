@@ -5,60 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Panglao Island</title>
-    <link rel="icon" type="sea logo/png" href="assets/sea logo.png">
+    <link rel="icon" type="image/png" href="assets/sea logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
-    <!-- Blurred Background -->
-    <div class="position-fixed top-0 vh-100 w-100 glass-clear" style="z-index: -3;">
-    </div>
+<body style="margin:0; font-family:Poppins, sans-serif;">
 
-    <video autoplay muted loop playsinline style="position: fixed; 
-           top: 0; 
-           left: 0; 
-           width: 100%; 
-           height: 100%; 
-           object-fit: cover; 
-           z-index: -2;
-           opacity: 0.7;">
+    <!-- Background Video -->
+    <div class="position-fixed top-0 vh-100 w-100" style="z-index:-3;"></div>
+    <video autoplay muted loop playsinline
+        style="position:fixed; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-2; opacity:0.7;">
         <source src="assets/wavebg.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
     <!-- Navigation -->
-    <div class="container-fluid position-sticky top-0 p-0 p-lg-3 z-1"
-        style="position: sticky; top: 0; padding: 0; z-index: 1;">
-        <div class="container-xl p-0" style="padding: 0;">
-            <div class="glass shadow-sm p-4 px-xl-5 poppins rounded-5 border-bottom"
-                style="transition: background-color 0.4s ease, backdrop-filter 0.4s ease; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); padding: 1.5rem; padding-left: 3rem; padding-right: 3rem; border-radius: 1.5rem; border-bottom: 1px solid rgba(0,0,0,.1); font-family: 'Poppins', sans-serif;">
-
-                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center"
-                    style="display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
-
-                    <div class="d-flex flex-row align-items-center"
-                        style="display: flex; flex-direction: row; align-items: center;">
-
+    <div class="container-fluid position-sticky top-0 p-0 p-lg-3 z-1">
+        <div class="container-xl p-0">
+            <div class="navigation glass shadow-sm p-4 px-xl-5 rounded-5 border-bottom"
+                style="background-color:rgba(255,255,255,0.95); backdrop-filter:blur(5px); transition:background-color 0.4s ease, backdrop-filter 0.4s ease;">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                    <div class="d-flex flex-row align-items-center">
                         <a href="../../../">
-                            <img src="assets/sea logo.png" style="width: 50px; height: 50px; margin-right: 1.5rem;">
+                            <img src="assets/sea logo.png" style="width:50px; height:50px;" class="me-4">
                         </a>
-
-                        <div class="d-flex flex-row mt-2 mt-lg-0 flex-wrap justify-content-center align-items-center gap-3"
-                            style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem; margin-top: 0.5rem;">
-
-                            <a href="index.html" class="nav-link"
-                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
-                                <small>Home</small>
-                            </a>
-                            <a href="#features" class="nav-link"
-                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
-                                <small>About</small>
-                            </a>
-                            <a href="#gallery" class="nav-link"
-                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
-                                <small>Gallery</small>
-                            </a>
+                        <div
+                            class="d-flex flex-row mt-2 mt-lg-0 flex-wrap justify-content-center align-items-center gap-3">
+                            <a href="index.html" class="nav-link"><small>Home</small></a>
+                            <a href="#features" class="nav-link"><small>About</small></a>
+                            <a href="#gallery" class="nav-link"><small>Gallery</small></a>
                         </div>
                     </div>
                 </div>
@@ -66,201 +42,170 @@
         </div>
     </div>
 
+    <!-- Title Section -->
+    <div class="container mt-2 pt-2 text-center">
+        <h1 style="font-weight:bold;">Panglao Island</h1>
+        <p>Sorsogon, Philippines</p>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="container my-4">
+        <div class="card border-0">
+            <img src="assets/panglao5.jpg" alt="Panglao Island" class="card-img rounded-4 shadow"
+                style="width:100%; height:auto;">
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="container my-5" id="features" style="scroll-margin-top:120px;">
+        <h1 style="font-weight:bold;">About</h1>
+        <p style="text-align:justify;">
+            Panglao Island in Bohol, Philippines, is one of the country’s premier tropical destinations,
+            famed for its white-sand beaches, crystal-clear waters, and vibrant marine life. Often compared
+            to Boracay for its beauty but with a more relaxed atmosphere, Panglao offers the perfect blend
+            of luxury and tranquility. It’s a gateway to world-class diving spots, natural attractions, and
+            Bohol’s warm island culture.
+
+        </p>
+    </div>
+
+    <!-- Location -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125888.11841790093!2d123.71235306329844!3d9.594948483485103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33abad34f4143b73%3A0x48214266208ed212!2sPanglao%20Island!5e0!3m2!1sen!2sph!4v1761926672728!5m2!1sen!2sph"
+                    style="border:0; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.3); width:100%; height:400px;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6">
+                <h3 style="font-weight:bold; margin-bottom:15px;">Location</h3>
+                <p style="font-size:16px; line-height:1.7; text-align:justify;">
+                    Located southwest of Bohol Island and connected to Tagbilaran City by two bridges, Panglao
+                    Island is easily accessible for both local and international travelers. The island is surrounded
+                    by the Bohol Sea, boasting beaches like Alona, Dumaluan, and Danao, all known for their fine
+                    white sand and turquoise waters. Beneath the surface, Panglao’s waters are home to rich coral
+                    gardens and diverse marine species, making it a paradise for divers and snorkelers.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nature and Environment -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 ms-auto">
+                <div
+                    style="border:2px solid rgba(255,255,255,0.7); border-radius:15px; padding:20px 25px; box-shadow:0 4px 15px rgba(0,0,0,0.15); background-color:rgba(255,255,255,0.1); backdrop-filter:blur(5px);">
+                    <div style="font-size:2rem; font-weight:700; margin-bottom:10px;">Nature and Environment</div>
+                    <p style="text-align:justify; margin:0;">
+                        The island is part of the Bohol Marine Triangle, a protected area known for its exceptional
+                        marine biodiversity. Its coral reefs are among the healthiest in the Philippines, sheltering
+                        sea turtles, colorful fish, and rare aquatic plants. Inland, visitors can explore Hinagdanan
+                        Cave — a natural limestone cave with an underground lagoon — or visit nearby eco-tourism
+                        sites promoting conservation and sustainable tourism.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ambiance -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div
+                    style="border:2px solid rgba(255,255,255,0.7); border-radius:15px; padding:20px 25px; box-shadow:0 4px 15px rgba(0,0,0,0.15); background-color:rgba(255,255,255,0.1); backdrop-filter:blur(5px);">
+                    <div style="font-size:2rem; font-weight:700; margin-bottom:10px;">Ambiance and Experience</div>
+                    <p style="text-align:justify; margin:0;">
+                        Panglao blends laid-back island charm with modern comfort. By day, visitors can swim, kayak, or
+                        dive in its clear waters, and by night, unwind at beachside restaurants with live music under
+                        the stars. The island’s easygoing atmosphere and friendly locals make it a perfect getaway for
+                        couples, families, and solo travelers who want both relaxation and a touch of adventure.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accommodations -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 ms-auto">
+                <div
+                    style="border:2px solid rgba(255,255,255,0.7); border-radius:15px; padding:20px 25px; box-shadow:0 4px 15px rgba(0,0,0,0.15); background-color:rgba(255,255,255,0.1); backdrop-filter:blur(5px);">
+                    <div style="font-size:2rem; font-weight:700; margin-bottom:10px;">Accommodations and Tourism</div>
+                    <p style="text-align:justify; margin:0;">
+                        Panglao features a variety of places to stay, from luxurious beachfront resorts and cozy
+                        boutique hotels to affordable hostels and homestays. Most accommodations are near Alona Beach,
+                        the lively center of the island’s tourism scene. Visitors can savor fresh seafood, join
+                        island-hopping tours to Balicasag and Virgin Islands, or watch dolphins at sunrise.
+
+                        With its breathtaking scenery, vibrant marine life, and warm community, Panglao Island remains
+                        one of the Philippines’ favorite destinations — a perfect mix of tropical paradise and mindful
+                        tourism.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container my-5 p-5" id="gallery" style="scroll-margin-top:120px;">
+        <div class="text-center mb-4">
+            <h1 style="font-weight:bold;">Gallery</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/panglao2.jpg" alt="Panglao 2"
+                    style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/panglao3.jpg" alt="Panglao 3"
+                    style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/panglao4.jpg" alt="Panglao 4"
+                    style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:transform 0.3s ease, box-shadow 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)';">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid mt-4 p-5 text-center border-top rounded-top-5"
+        style="background-color:rgba(255,255,255,0.3); backdrop-filter:blur(10px);">
+        <img src="assets/sea logo.png" alt="Logo" style="height:50px; width:50px;" class="mb-3">
+        <div class="my-3">
+            <small>Let's make every day a beach day!</small>
+        </div>
+        <div class="mt-4 text-body-secondary">© 2025 Chelsea's Beach Showcase</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
     <script>
         window.addEventListener('scroll', function () {
             const nav = document.querySelector('.navigation');
             if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
+                nav.style.backgroundColor = 'rgba(255,255,255,0.6)';
+                nav.style.backdropFilter = 'blur(5px)';
             } else {
-                nav.classList.remove('scrolled');
+                nav.style.backgroundColor = 'rgba(255,255,255,0.95)';
+                nav.style.backdropFilter = 'blur(5px)';
             }
         });
     </script>
 </body>
-
-<div class="container mt-2 pt-2">
-    <div class="row">
-        <div class="col text-center">
-            <h1 style="font-family: Poppins, sans-serif; font-weight: bold;">Panglao Island</h1>
-            <p style="font-family: Poppins, sans-serif;">Bohol, Philippines</p>
-        </div>
-    </div>
-
-    <div class="card text-bg-dark">
-        <img src="assets/panglao5.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay">
-        </div>
-    </div>
-
-    <div class="div">
-        <div class="row my-5 p-5">
-            <div class="col">
-                <div class="col text-left" id="features" style="scroll-margin-top: 120px;">
-                    <h1 style="font-family: Poppins, sans-serif; font-weight: bold;">About</h1>
-                    <p style="font-family: Poppins, sans-serif; text-align: justify;">
-                        Panglao Island in Bohol, Philippines, is one of the country’s premier tropical destinations,
-                        famed for its white-sand beaches, crystal-clear waters, and vibrant marine life. Often compared
-                        to Boracay for its beauty but with a more relaxed atmosphere, Panglao offers the perfect blend
-                        of luxury and tranquility. It’s a gateway to world-class diving spots, natural attractions, and
-                        Bohol’s warm island culture.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container my-5">
-            <div class="row align-items-center" style="display:flex; flex-wrap:wrap;">
-
-                <!-- Google Map-->
-                <div class="col-md-6 col-sm-12 mb-4" style="flex:1; padding:10px;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125888.11841790093!2d123.71235306329844!3d9.594948483485103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33abad34f4143b73%3A0x48214266208ed212!2sPanglao%20Island!5e0!3m2!1sen!2sph!4v1761926672728!5m2!1sen!2sph"
-                        style="border:0; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.3); width:100%; height:400px;"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-
-                <div class="col-md-6 col-sm-12"
-                    style="flex:1; padding:20px; display:flex; flex-direction:column; justify-content:center; font-family:Poppins, sans-serif;">
-                    <h3 style="font-weight:bold; margin-bottom:15px;">Location</h3>
-                    <p style="font-size:16px; line-height:1.7; text-align:justify;">
-                        Located southwest of Bohol Island and connected to Tagbilaran City by two bridges, Panglao
-                        Island is easily accessible for both local and international travelers. The island is surrounded
-                        by the Bohol Sea, boasting beaches like Alona, Dumaluan, and Danao, all known for their fine
-                        white sand and turquoise waters. Beneath the surface, Panglao’s waters are home to rich coral
-                        gardens and diverse marine species, making it a paradise for divers and snorkelers.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 ms-auto mt-5" style="text-align: left;">
-                    <div style="border: 2px solid rgba(255, 255, 255, 0.7);
-                  border-radius: 15px;
-                  display: inline-block;
-                  padding: 20px 25px;
-                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-                  background-color: rgba(255, 255, 255, 0.1);
-                  backdrop-filter: blur(5px);">
-                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
-                            Nature and Environment
-                        </div>
-                        <p style="text-align: justify; margin: 0;">
-                            The island is part of the Bohol Marine Triangle, a protected area known for its exceptional
-                            marine biodiversity. Its coral reefs are among the healthiest in the Philippines, sheltering
-                            sea turtles, colorful fish, and rare aquatic plants. Inland, visitors can explore Hinagdanan
-                            Cave — a natural limestone cave with an underground lagoon — or visit nearby eco-tourism
-                            sites promoting conservation and sustainable tourism.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 mt-5">
-                    <div style="border: 2px solid rgba(255, 255, 255, 0.7);
-                  border-radius: 15px;
-                  display: inline-block;
-                  padding: 20px 25px;
-                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-                  background-color: rgba(255, 255, 255, 0.1);
-                  backdrop-filter: blur(5px);">
-                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
-                            Ambiance and Experience
-                        </div>
-                        <p style="text-align: justify; margin: 0;">
-                            Panglao offers a mix of laid-back charm and modern comfort. Daytime activities include
-                            swimming, kayaking, and diving in pristine waters, while evenings are spent enjoying
-                            beachside restaurants and live music under the stars. The island’s calm and friendly vibe
-                            makes it ideal for couples, families, and solo travelers seeking relaxation with adventure
-                            on the side.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 ms-auto mt-5" style="text-align: left;">
-                    <div style="border: 2px solid rgba(255, 255, 255, 0.7);
-                  border-radius: 15px;
-                  display: inline-block;
-                  padding: 20px 25px;
-                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-                  background-color: rgba(255, 255, 255, 0.1);
-                  backdrop-filter: blur(5px);">
-                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
-                            Accommodations and Tourism
-                        </div>
-                        <p style="text-align: justify; margin: 0;">
-                            Panglao offers a wide range of accommodations, from luxurious beachfront resorts and
-                            boutique hotels to budget-friendly hostels and homestays. Most are located near Alona Beach,
-                            the heart of the island’s tourism. Visitors can enjoy fresh seafood, island-hopping tours to
-                            nearby Balicasag and Virgin Islands, and dolphin-watching excursions at sunrise.
-
-                            With its stunning natural beauty, rich marine life, and welcoming community, Panglao Island
-                            remains one of the Philippines’ most sought-after destinations — a perfect blend of tropical
-                            paradise and sustainable tourism.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container my-5 p-5">
-            <div class="row">
-                <div class="col text-center" id="gallery" style="scroll-margin-top: 120px;">
-                    <h1 style="font-family: Poppins, sans-serif; font-weight: bold;">Gallery</h1>
-                </div>
-            </div>
-
-            <div class="container mt-5 mb-5">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="assets/panglao2.jpg" alt="Pagudpud Image 1"
-                            style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="assets/panglao3.jpg" alt="Pagudpud Image 2"
-                            style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="assets/panglao4.jpg" alt="Pagudpud Image 3"
-                            style="width:100%; height:250px; object-fit:cover; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="container-fluid glass mt-4 p-5 drop-shadow-sm text-center border-top rounded-top-5  ">
-                <div class="row">
-                    <div class="col">
-                        <div class="mb-3">
-                            <img src="assets/sea logo.png" alt="Beaches Go Everywhere"
-                                style="height: 50px; width: 50px;">
-                        </div>
-                        <div class="my-4">
-                            <small>
-                                Let's make every day a beach day!
-                            </small>
-                        </div>
-                        <div class="mt-5 text-body-secondary">© 2025 Chelsea's Beach Showcase</div>
-                    </div>
-                </div>
-            </div>
-
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                crossorigin="anonymous"></script>
-            </body>
 
 </html>
