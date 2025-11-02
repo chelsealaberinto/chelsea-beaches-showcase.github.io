@@ -15,39 +15,41 @@
     <div class="position-fixed top-0 vh-100 w-100 glass-clear" style="z-index: -3;"></div>
 
     <!-- Navigation Bar -->
-    <style>
-        .navigation {
-            transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(5px);
-        }
+    <div class="container-fluid position-sticky top-0 p-0 p-lg-3 z-1"
+        style="position: sticky; top: 0; padding: 0; padding-left: var(--bs-gutter-x,1.5rem); padding-right: var(--bs-gutter-x,1.5rem); z-index: 1;">
+        <div class="container-xl p-0" style="padding: 0;">
+            <div class="navigation glass shadow-sm p-4 px-xl-5 poppins rounded-5 border-bottom"
+                style="transition: background-color 0.4s ease, backdrop-filter 0.4s ease; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); padding: 1.5rem; padding-left: 3rem; padding-right: 3rem; border-radius: 1.5rem; border-bottom: 1px solid rgba(0,0,0,.1); font-family: 'Poppins', sans-serif;">
 
-        .navigation.scrolled {
-            background-color: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(5px);
-        }
-    </style>
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center"
+                    style="display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
 
-    <div class="container-fluid position-sticky top-0 p-0 p-lg-3 z-1">
-        <div class="container-xl p-0">
-            <div class="navigation glass shadow-sm p-4 px-xl-5 poppins rounded-5 border-bottom">
-                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
-                    <div class="d-flex flex-row align-items-center">
+                    <div class="d-flex flex-row align-items-center"
+                        style="display: flex; flex-direction: row; align-items: center;">
+
                         <a href="../../../">
-                            <img class="me-4" src="assets/sea logo.png" style="width: 50px; height: 50px;">
+                            <img class="me-4" src="assets/sea logo.png"
+                                style="width: 50px; height: 50px; margin-right: 1.5rem;">
                         </a>
-                        <div
-                            class="d-flex flex-row mt-2 mt-lg-0 flex-wrap justify-content-center align-items-center gap-3">
-                            <a href="#" class="nav-link"><small>Home</small></a>
-                            <a href="#features" class="nav-link"><small>Collections</small></a>
-                            <a href="#about" class="nav-link"><small>About</small></a>
 
+                        <div class="d-flex flex-row mt-2 mt-lg-0 flex-wrap justify-content-center align-items-center gap-3"
+                            style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+
+                            <a href="#" class="nav-link"
+                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
+                                <small>Home</small>
+                            </a>
+                            <a href="#collection" class="nav-link"
+                                style="text-decoration: none; color: inherit; font-size: 0.875rem;">
+                                <small>Collections</small>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Video Banner -->
     <div class="container-fluid p-0 text-center" style="margin-top:-150px; position:relative; overflow:hidden;">
@@ -93,8 +95,8 @@
 
 
     <!-- Title Section -->
-    <div class="container text-center mt-5">
-        <h1 class="display-4 fw-bold mt-4 poppins">Chelsea's Beach Collection</h1>
+    <div class="container text-center mt-5" id="collection" style="scroll-margin-top: 120px;">
+        <h1 class="display-4 fw-bold mt-4 poppins">Sea's Collection</h1>
         <p class="lead mb-4">
             Let the rhythm of the waves guide you through the Philippines’ pristine beaches —
             a paradise of turquoise seas, white sands, and timeless beauty.
@@ -109,7 +111,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
                 <a href="pagudpud.html" style="text-decoration:none; color:inherit; width:100%;">
                     <div class="card shadow-lg"
-                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:all 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 0 20px rgba(0,0,0,0.25)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.1)';">
                         <img src="assets/pagudpud1.jpg" alt="Pagudpud"
                             style="height:200px; width:100%; object-fit:cover;">
                         <div class="card-body text-center"
@@ -125,7 +129,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
                 <a href="hundredislands.html" style="text-decoration:none; color:inherit; width:100%;">
                     <div class="card shadow-lg"
-                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:all 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 0 20px rgba(0,0,0,0.25)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.1)';">
                         <img src="assets/100island1.jpg" alt="Hundred Islands"
                             style="height:200px; width:100%; object-fit:cover;">
                         <div class="card-body text-center"
@@ -141,13 +147,15 @@
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
                 <a href="paguriran.html" style="text-decoration:none; color:inherit; width:100%;">
                     <div class="card shadow-lg"
-                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:all 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 0 20px rgba(0,0,0,0.25)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.1)';">
                         <img src="assets/paguriran1.jpg" alt="Paguriran Island"
                             style="height:200px; width:100%; object-fit:cover;">
                         <div class="card-body text-center"
                             style="height:120px; display:flex; flex-direction:column; justify-content:center; align-items:center; font-family:Poppins, sans-serif;">
                             <p style="font-weight:bold; margin-bottom:5px;">Paguriran Island</p>
-                            <p style="margin:0;">Bataan</p>
+                            <p style="margin:0;">Sorsogon</p>
                         </div>
                     </div>
                 </a>
@@ -157,7 +165,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
                 <a href="panglao.html" style="text-decoration:none; color:inherit; width:100%;">
                     <div class="card shadow-lg"
-                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:all 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 0 20px rgba(0,0,0,0.25)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.1)';">
                         <img src="assets/panglao1.jpg" alt="Panglao Island"
                             style="height:200px; width:100%; object-fit:cover;">
                         <div class="card-body text-center"
@@ -173,7 +183,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
                 <a href="manjuyod.html" style="text-decoration:none; color:inherit; width:100%;">
                     <div class="card shadow-lg"
-                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:all 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 0 20px rgba(0,0,0,0.25)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.1)';">
                         <img src="assets/manjuyod1.jpg" alt="Manjuyod White Sandbar"
                             style="height:200px; width:100%; object-fit:cover;">
                         <div class="card-body text-center"
@@ -189,7 +201,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
                 <a href="gigantes.html" style="text-decoration:none; color:inherit; width:100%;">
                     <div class="card shadow-lg"
-                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:transform 0.3s ease, box-shadow 0.3s ease;">
+                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:all 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 0 20px rgba(0,0,0,0.25)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.1)';">
                         <img src="assets/gigantes1.jpg" alt="Islas de Gigantes"
                             style="height:200px; width:100%; object-fit:cover;">
                         <div class="card-body text-center"
@@ -201,57 +215,61 @@
                 </a>
             </div>
 
+            <!-- Card 7 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                <a href="kalanggaman.html" style="text-decoration:none; color:inherit; width:100%;">
+                    <div class="card shadow-lg"
+                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:all 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 0 20px rgba(0,0,0,0.25)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.1)';">
+                        <img src="assets/kalanggaman2.jpg" alt="Kalanggaman Island"
+                            style="height:200px; width:100%; object-fit:cover;">
+                        <div class="card-body text-center"
+                            style="height:120px; display:flex; flex-direction:column; justify-content:center; align-items:center; font-family:Poppins, sans-serif;">
+                            <p style="font-weight:bold; margin-bottom:5px;">Kalanggaman Island</p>
+                            <p style="margin:0;">Leyte</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                <a href="amanpulo.html" style="text-decoration:none; color:inherit; width:100%;">
+                    <div class="card shadow-lg"
+                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:all 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 0 20px rgba(0,0,0,0.25)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.1)';">
+                        <img src="assets/amanpulo2.jpg" alt="Amanpulo"
+                            style="height:200px; width:100%; object-fit:cover;">
+                        <div class="card-body text-center"
+                            style="height:120px; display:flex; flex-direction:column; justify-content:center; align-items:center; font-family:Poppins, sans-serif;">
+                            <p style="font-weight:bold; margin-bottom:5px;">Amanpulo</p>
+                            <p style="margin:0;">Palawan</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                <a href="siargao.html" style="text-decoration:none; color:inherit; width:100%;">
+                    <div class="card shadow-lg"
+                        style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:all 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 0 20px rgba(0,0,0,0.25)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.1)';">
+                        <img src="assets/siargao4.jpg" alt="Siargao Island"
+                            style="height:200px; width:100%; object-fit:cover;">
+                        <div class="card-body text-center"
+                            style="height:120px; display:flex; flex-direction:column; justify-content:center; align-items:center; font-family:Poppins, sans-serif;">
+                            <p style="font-weight:bold; margin-bottom:5px;">Siargao Island</p>
+                            <p style="margin:0;">Surigao del Norte</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
         </div>
-    </div>
-
-    <!-- Card 7 -->
-    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-        <a href="kalanggaman.html" style="text-decoration:none; color:inherit; width:100%;">
-            <div class="card shadow-lg"
-                style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:transform 0.3s ease, box-shadow 0.3s ease;">
-                <img src="assets/kalanggaman2.jpg" alt="Kalanggaman Island"
-                    style="height:200px; width:100%; object-fit:cover;">
-                <div class="card-body text-center"
-                    style="height:120px; display:flex; flex-direction:column; justify-content:center; align-items:center; font-family:Poppins, sans-serif;">
-                    <p style="font-weight:bold; margin-bottom:5px;">Kalanggaman Island</p>
-                    <p style="margin:0;">Leyte</p>
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <!-- Card 8 -->
-    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-        <a href="amanpulo.html" style="text-decoration:none; color:inherit; width:100%;">
-            <div class="card shadow-lg"
-                style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:transform 0.3s ease, box-shadow 0.3s ease;">
-                <img src="assets/amanpulo2.jpg" alt="Amanpulo" style="height:200px; width:100%; object-fit:cover;">
-                <div class="card-body text-center"
-                    style="height:120px; display:flex; flex-direction:column; justify-content:center; align-items:center; font-family:Poppins, sans-serif;">
-                    <p style="font-weight:bold; margin-bottom:5px;">Amanpulo</p>
-                    <p style="margin:0;">Palawan</p>
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <!-- Card 9 -->
-    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-        <a href="siargao.html" style="text-decoration:none; color:inherit; width:100%;">
-            <div class="card shadow-lg"
-                style="width:100%; height:320px; border-radius:15px; overflow:hidden; background-color:rgba(255,255,255,0.85); transition:transform 0.3s ease, box-shadow 0.3s ease;">
-                <img src="assets/siargao4.jpg" alt="Siargao Island" style="height:200px; width:100%; object-fit:cover;">
-                <div class="card-body text-center"
-                    style="height:120px; display:flex; flex-direction:column; justify-content:center; align-items:center; font-family:Poppins, sans-serif;">
-                    <p style="font-weight:bold; margin-bottom:5px;">Siargao Island</p>
-                    <p style="margin:0;">Surigao del Norte</p>
-                </div>
-            </div>
-        </a>
-    </div>
-
-
-    </div>
     </div>
 
     <!-- Footer -->
